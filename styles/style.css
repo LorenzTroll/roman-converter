@@ -1,0 +1,36 @@
+
+body {
+  margin: 0, auto;
+  background: #202121;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 20vw;
+  height: 25px;
+  border-style: none;
+  padding: 12px 20px 14px 20px;
+  border-radius: 10px;
+  background: #F3EFEF;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+}
+
+h1#outputField {
+  font-size: 60px;
+  font-weight: bold;
+  width: 80vw;
+  height: 10vh;
+  color : white;
+  text-align: center;
+}
