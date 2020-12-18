@@ -5,9 +5,6 @@ inputField.addEventListener("input", (event) => {
   outputField.innerHTML = convertToRoman(event.target.value);
 });
 
-
-
-
 function convertToRoman(input) {
 
   // empty string for result
@@ -26,22 +23,22 @@ function convertToRoman(input) {
        the subtractive notation or the numbers from the arabic array.
        With index from .map() we identify The Roman numeral and add it
        to result variable.*/
-       if (input == 4) {
-         input -= 4;
-         result += 'IV';
-       } else if (input == 9) {
+       if (input === 4) {
+          input -= 4;
+          result += 'IV';
+       } else if (input === 9) {
           input -= 9;
           result += 'IX';
-       } else if (input >= 40 && input <= 50) {
+       } else if (input >= 40 && input <= 49) {
           input -= 40;
           result += 'XL';
-       } else if (input >= 90 && input <= 100) {
+       } else if (input >= 90 && input <= 99) {
           input -= 90;
           result += 'XC';
-       } else if (input >= 400 && input <= 500) {
+       } else if (input >= 400 && input <= 499) {
           input -= 400;
-          result += 'CD'
-       } else if ( input >= 900 && input <= 1000) {
+          result += 'CD';
+       } else if ( input >= 900 && input <= 999) {
           input -= 900;
           result += 'CM';
        } else {
@@ -49,6 +46,6 @@ function convertToRoman(input) {
        result += romanNumbers[i];
        }
      }
-    });
+  });
   return result;
 }
